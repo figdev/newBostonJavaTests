@@ -13,7 +13,7 @@ class newBoston {
     }
 }
  **/
-/**
+/*
     math operators
 class newBoston {
     public static void main(String[] args){
@@ -23,8 +23,8 @@ class newBoston {
         people = girls + boys;
     }
 }
- **/
-/**
+ */
+/*
 class newBoston{
     public static void main(String[] args){
         Scanner bucky = new Scanner(System.in);
@@ -35,7 +35,7 @@ class newBoston{
     }
 } **/
 
-/**
+/*
 class newBoston {
     public static void main(String[] args){
         int test = 6;
@@ -44,9 +44,9 @@ class newBoston {
         else System.out.println("this is else dummy");
     }
 }
- **/
+ */
 
-/**
+/*
 // number 12
 class newBoston{
     public static void main(String[] args){
@@ -59,9 +59,9 @@ class newBoston{
         }
     }
 }
- **/
+ */
 
-/**
+/*
 // number 13
 class newBoston {
     public static void main(String[] args){
@@ -72,12 +72,29 @@ class newBoston {
         System.out.print("Ended on: " + counter);
     }
 }
-**/
+*/
 
+/*
 //number 14
 class apples {
     public static void main(String[] args){
         tuna tunaObject = new tuna();
         tunaObject.simpleMessage();
+    }
+}
+*/
+
+//number 15 {Use Methods with Parameters}
+import java.util.Scanner;
+
+class apples {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        tuna tunaObject = new tuna();
+
+        System.out.println("Enter your name here: ");
+        String name = input.nextLine();
+
+        tunaObject.simpleMessage(name);
     }
 }
