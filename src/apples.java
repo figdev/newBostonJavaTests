@@ -83,18 +83,115 @@ class apples {
     }
 }
 */
-
+/*
 //number 15 {Use Methods with Parameters}
 import java.util.Scanner;
 
 class apples {
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
-        tuna tunaObject = new tuna();
+            Scanner input = new Scanner(System.in);
+            tuna tunaObject = new tuna();
 
-        System.out.println("Enter your name here: ");
-        String name = input.nextLine();
+            System.out.print("Enter your name here: ");
+            String name = input.nextLine();
 
-        tunaObject.simpleMessage(name);
+            tunaObject.simpleMessage(name);
     }
 }
+/
+ */
+/*
+//number 16 {Many Methods and Instances}
+import java.util.Scanner;
+
+class apples {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        tuna tunaObject = new tuna();
+        System.out.print("Enter name of first girlfriend here: ");
+        String temp = input.nextLine();
+        tunaObject.setName(temp);
+        tunaObject.saying();
+    }
+}
+ */
+
+/*
+//number 17 {Constructors}
+class apples {
+    public static void main(String[] args){
+        tuna tunaObject = new tuna("Kelsey");
+        tuna tunaObject2 = new tuna("Nicky");
+        tunaObject.saying();
+        tunaObject2.saying();
+    }
+}
+*/
+
+/*//number 18 {Nested if Statements}
+class apples {
+    public static void main(String[] args){
+        int age = 60;
+
+        if (age < 50) {
+            System.out.println("You are young.");
+        }
+        else {
+            System.out.println("You are old!");
+            if (age > 75) {
+                System.out.println("You are REALLY old!");
+            }
+            else {
+                System.out.println("Don\'t worry, you aren\'t really that old.");
+            }
+        }
+    }
+}*/
+/*
+//number 19 {else if statement}
+class apples {
+    public static void main(String[] args) {
+
+        int age = 25;
+
+        if (age > 60)
+            System.out.println("You are a senior citizen.");
+        else if (age >= 50)
+            System.out.println("You are in your 50\'s.");
+        else if (age >= 40)
+            System.out.println("You are in your 40\'s.");
+        else
+            System.out.println("You are a young buck.");
+    }
+}
+*/
+/*
+//number 20 conditional operators
+class apples {
+    public static void main(String[] args){
+        int age = 20;
+        System.out.println(age > 50 ? "You are old" : "You are young");
+//       condition ? true statement : false statement
+    }
+}
+*/
+
+/*
+//number 21 simper averaging program
+import java.util.Scanner;
+
+class apples {
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        int total = 0, counter = 0;
+        int grade, average;
+
+        while (counter < 3){
+            grade = input.nextInt();
+            total += grade;
+            counter++;
+        }
+        average = total/3;
+        System.out.printf("Your average is %d", average);
+    }
+}*/
