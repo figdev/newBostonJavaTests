@@ -195,3 +195,15 @@ class apples {
         System.out.printf("Your average is %d", average);
     }
 }*/
+
+//number 22 for loops
+class apples{
+    public static void main(String[] args){
+        int monkeyError = 0;
+        for(int counter = 1; counter <= 100; counter += 1){
+            System.out.println(counter);
+            monkeyError = counter;
+        }
+        System.out.println(monkeyError);
+    }
+}
