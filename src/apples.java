@@ -252,6 +252,7 @@ class apples {
 
     }
 }*/
+/*
 //  number 26 random number generator
 //    bucky is cool
     import java.util.Random;
@@ -260,8 +261,139 @@ class apples {
         Random roll = new Random();
         int dice;
         for(int counter = 1; counter <= 10; counter++) {
-            dice = 1 + roll.nextInt(6);
+            dice = 1 + roll.nextInt(6); //mysql type beat
             System.out.println(dice + " ");
+        }
+    }
+}*/
+/*
+//      number 27 Introducing Arrays
+class apples {
+    public static void main(String[] args) {
+*/
+/*        int[] bucky = new int[10];
+//      type name    dec   size
+
+        bucky[0] = 87;
+        bucky[1] = 543;
+        bucky[9] = 444;
+
+        System.out.println(bucky[0]);*/
+/*
+
+
+        int[] bucky = {2, 4, 5, 6, 7, 9};
+        System.out.println(bucky[2]);
+
+    }
+}
+*/
+/*
+//  number 28 creating an array table
+class apples {
+    public static void main(String[] args) {
+        System.out.println("Index\tValue");
+        int[] bucky = {32,18,54,2};
+        for(int counter = 0; counter < bucky.length; counter++){
+            System.out.println(counter + "\t\t"+ bucky[counter]);
+        }
+    }
+}
+*/
+/*
+//      number 29 summing elements of arrays
+class apples {
+    public static void main(String[] args) {
+        int[] bucky={21,16,86,21,3};
+        int sum = 0;
+        int average;
+
+        for (int i : bucky) {
+            sum += i;
+        }
+        System.out.println("The sum of these numbers is " + sum);
+        average = sum / bucky.length;
+        System.out.println("The average is " + average+ " rounded down");
+    }
+}
+*/
+/*
+//      number 30 array elements as counters
+import java.util.Random;
+
+class apples {
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int[] freq = new int[7];
+
+        for (int roll = 1; roll<=10; roll++) {
+//                              "equal to" to roll at the number, not one under!
+            ++freq[1+rand.nextInt(6)];
+        }
+        System.out.println("Face\tFrequency");
+
+        for(int face = 1; face<freq.length;face++) {
+            System.out.println(face+"\t\t"+freq[face]);
+        }
+    }
+}*/
+/*
+//      number 31 enhanced for loop
+class apples{
+    public static void main(String[] args) {
+        int[] bucky = {3,4,5,6,7};
+        int sum = 0;
+        for (int x: bucky) {
+//                  this only works for arrays!
+            sum += x;
+        }
+        System.out.println(sum);
+    }
+}
+*/
+/*
+//      number 32 arrays in methods
+//    https://www.youtube.com/watch?v=rzXoz2KOP7E&list=PLFE2CE09D83EE3E28&index=32
+class apples {
+    public static void main(String[] args) {
+        int[] bucky = {3,4,5,6,7};
+        change(bucky);
+
+        for(int x:bucky)
+            System.out.println(x);
+    }
+    public static void change(int[] x){
+        for(int counter = 0; counter < x.length; counter++)
+            x[counter] += 5;
+    }
+}
+*/
+/*
+//      number 33 multidimensional arrays
+class apples {
+    public static void main(String[] args) {
+        int[][] firstArray={{8,9,10,11},{12,13,14,15}};
+        int[][] secondArray = {{30,31,32,33},{43},{4,5,6}};
+    }
+}
+*/
+//      number 34 table for multi arrays
+class apples {
+    public static void main(String[] args) {
+        int[][] firstArray={{8,9,10,11},{12,13,14,15}};
+        int[][] secondArray = {{30,31,32,33},{43},{4,5,6}};
+
+        System.out.println("This the first array");
+        display(firstArray);
+        System.out.println("This is the second array");
+        display(secondArray);
+    }
+    public static void display(int[][]x) {
+        for (int row = 0; row < x.length; row++){
+            for (int column = 0; column < x[row].length; column++) {
+                System.out.print(x[row][column] + "\t");
+            }
+            System.out.println();
         }
     }
 }
