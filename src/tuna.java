@@ -55,7 +55,7 @@ public class tuna {
 }
 */
 /*
-//number 18 {Nested if Statments}
+//number 18 {Nested if Statements}
 public class tuna{
 }
 */

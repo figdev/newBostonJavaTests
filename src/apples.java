@@ -196,14 +196,72 @@ class apples {
     }
 }*/
 
-//number 22 for loops
-class apples{
+/*//number 22 for loops
+class apples {
     public static void main(String[] args){
-        int monkeyError = 0;
-        for(int counter = 1; counter <= 100; counter += 1){
+        float monkeyError = 0;
+        for(float counter = 1; counter <= 100; counter += 0.1){
             System.out.println(counter);
             monkeyError = counter;
         }
         System.out.println(monkeyError);
+    }
+}*/
+
+/*
+// 23 compound interest program
+//    easy dub, formatting in printf is fun!
+class apples {
+    public static void main(String[] args) {
+//        A = P(1+r)^n
+//        formula
+        double amount, principal = 10000;
+        double rate = 0.01; // 1% a day
+        for(int day=1; day <= 20; day++) {
+            amount = principal * (Math.pow(1 + rate, day));
+            System.out.printf("%d   %.2f\n", day, amount);
+        }
+    }
+}*/
+/*//    number 24 do while loops
+class apples {
+    public static void main(String[] args) {
+        int counter = 0;
+        do {
+            System.out.println(counter);
+            counter++;
+        } while (counter <= 10);
+    }
+}*/
+/*
+//  number 25 math class methods
+class apples {
+    public static void main(String[] args) {
+        System.out.println(Math.abs(-26.7)); // makes positive
+        System.out.println(Math.ceil(-26.7)); //takes higher rounding
+        System.out.println(Math.ceil(12.4));
+        System.out.println(Math.floor(23.45)); //takes lower rounding
+        System.out.println(Math.floor(-45.66));
+        System.out.println(Math.max(8.6, 5.2)); //takes higher value
+        System.out.println(Math.min(5.1, 4.3)); //takes lesser value
+        System.out.println(Math.pow(5, 3)); // x to the power of y
+        System.out.println(Math.sqrt(9)); // square root of x
+
+        System.out.printf("%.1f\n", Math.sqrt(56));
+        System.out.printf("%.6f\n", Math.sqrt(56));
+
+    }
+}*/
+//  number 26 random number generator
+//    bucky is cool
+    import java.util.Random;
+class apples {
+    public static void main(String[] args) {
+        Random roll = new Random();
+        int dice;
+        for(int counter = 1; counter <= 10; counter++) {
+            dice = 1 + roll.nextInt(6);
+            System.out.println(dice + " ");
+        }
     }
 }
