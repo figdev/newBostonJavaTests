@@ -377,7 +377,7 @@ class apples {
     }
 }
 */
-//      number 34 table for multi arrays
+/*//      number 34 table for multi arrays
 class apples {
     public static void main(String[] args) {
         int[][] firstArray={{8,9,10,11},{12,13,14,15}};
@@ -389,11 +389,77 @@ class apples {
         display(secondArray);
     }
     public static void display(int[][]x) {
-        for (int row = 0; row < x.length; row++){
-            for (int column = 0; column < x[row].length; column++) {
-                System.out.print(x[row][column] + "\t");
+        for (int[] ints : x) {
+            for (int anInt : ints) {
+                System.out.print(anInt + "\t");
             }
             System.out.println();
         }
+    }
+}*/
+/*
+//      number 35   Variable Length Arguments
+class apples {
+    public static void main(String[] args) {
+        System.out.println(average(43,56,76,8,56,5555,1));
+    }
+
+    public static int average(int ... numbers) {
+        int total = 0;
+        for(int x : numbers)
+            total += x;
+        return total / numbers.length;
+    }
+}
+*/
+/*
+//      number 36       time class
+class apples {
+    public static void main(String[] args) {
+
+        tuna tunaObject = new tuna();
+
+        System.out.println(tunaObject.toMilitary());
+
+        tunaObject.setTime(13,40,6);
+        System.out.println(tunaObject.toMilitary());
+    }
+}
+*/
+//      number 37 display regular time
+    import java.util.Scanner;
+
+class apples {
+    public static void main(String[] args) {
+
+        int h, m, s;
+        String i,j,k;
+        boolean check = false;
+        tuna tunaObject = new tuna();
+        Scanner scan = new Scanner(System.in);
+
+        while (!check) {
+            System.out.println("Please enter the time, as hours, minutes, seconds");
+            System.out.print("Hours: ");
+            i = scan.next();
+            System.out.print("Minutes: ");
+            j = scan.next();
+            System.out.print("Seconds: ");
+            k = scan.next();
+            System.out.println();
+            if (h >= 0 && h < 24
+            && m >= 0 && m < 60
+            && s >=0 && s < 60) {
+                check = true;
+                break;
+            }
+            System.out.println("Invalid Entry; please enter values of hours (0-23), minutes (0-59), and seconds (0-59)");
+            System.out.println("Military time is accepted, but 12 hour time is also accepted.\n");
+            tunaObject.setTime(h,m,s);
+        }
+
+            System.out.println(tunaObject.toMilitary());
+            System.out.println(tunaObject.toString());
+
     }
 }
