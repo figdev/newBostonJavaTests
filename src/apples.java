@@ -1,4 +1,5 @@
-/**
+/*
+
       calculator
 class newBoston {
     public static void main(String[] args) {
@@ -12,18 +13,16 @@ class newBoston {
         System.out.print(answer);
     }
 }
- **/
-/*
-    math operators
-class newBoston {
+*/
+/*//    math operators
+class apples {
     public static void main(String[] args){
         int girls, boys, people;
         girls = 6;
         boys = 3;
         people = girls + boys;
     }
-}
- */
+}*/
 /*
 class newBoston{
     public static void main(String[] args){
@@ -34,7 +33,6 @@ class newBoston{
         System.out.println(tuna++);
     }
 } **/
-
 /*
 class newBoston {
     public static void main(String[] args){
@@ -45,7 +43,6 @@ class newBoston {
     }
 }
  */
-
 /*
 // number 12
 class newBoston{
@@ -60,7 +57,6 @@ class newBoston{
     }
 }
  */
-
 /*
 // number 13
 class newBoston {
@@ -73,7 +69,6 @@ class newBoston {
     }
 }
 */
-
 /*
 //number 14
 class apples {
@@ -115,7 +110,6 @@ class apples {
     }
 }
  */
-
 /*
 //number 17 {Constructors}
 class apples {
@@ -127,7 +121,6 @@ class apples {
     }
 }
 */
-
 /*//number 18 {Nested if Statements}
 class apples {
     public static void main(String[] args){
@@ -175,7 +168,6 @@ class apples {
     }
 }
 */
-
 /*
 //number 21 simper averaging program
 import java.util.Scanner;
@@ -195,7 +187,6 @@ class apples {
         System.out.printf("Your average is %d", average);
     }
 }*/
-
 /*//number 22 for loops
 class apples {
     public static void main(String[] args){
@@ -207,7 +198,6 @@ class apples {
         System.out.println(monkeyError);
     }
 }*/
-
 /*
 // 23 compound interest program
 //    easy dub, formatting in printf is fun!
@@ -266,30 +256,23 @@ class apples {
         }
     }
 }*/
-/*
-//      number 27 Introducing Arrays
+/*//      number 27 Introducing Arrays
 class apples {
     public static void main(String[] args) {
-*/
-/*        int[] bucky = new int[10];
+        int[] bucky = new int[10];
 //      type name    dec   size
 
         bucky[0] = 87;
         bucky[1] = 543;
         bucky[9] = 444;
 
-        System.out.println(bucky[0]);*/
-/*
+        System.out.println(bucky[0]);
 
-
-        int[] bucky = {2, 4, 5, 6, 7, 9};
         System.out.println(bucky[2]);
 
     }
-}
-*/
-/*
-//  number 28 creating an array table
+}*/
+/*//  number 28 creating an array table
 class apples {
     public static void main(String[] args) {
         System.out.println("Index\tValue");
@@ -298,8 +281,7 @@ class apples {
             System.out.println(counter + "\t\t"+ bucky[counter]);
         }
     }
-}
-*/
+}*/
 /*
 //      number 29 summing elements of arrays
 class apples {
@@ -426,40 +408,191 @@ class apples {
     }
 }
 */
+/*
 //      number 37 display regular time
-    import java.util.Scanner;
+import java.util.Scanner;
 
 class apples {
     public static void main(String[] args) {
-
-        int h, m, s;
-        String i,j,k;
-        boolean check = false;
         tuna tunaObject = new tuna();
-        Scanner scan = new Scanner(System.in);
+        System.out.println(tunaObject.toMilitary());
+        System.out.println(tunaObject.toString());
 
-        while (!check) {
-            System.out.println("Please enter the time, as hours, minutes, seconds");
-            System.out.print("Hours: ");
-            i = scan.next();
-            System.out.print("Minutes: ");
-            j = scan.next();
-            System.out.print("Seconds: ");
-            k = scan.next();
-            System.out.println();
-            if (h >= 0 && h < 24
-            && m >= 0 && m < 60
-            && s >=0 && s < 60) {
-                check = true;
-                break;
-            }
-            System.out.println("Invalid Entry; please enter values of hours (0-23), minutes (0-59), and seconds (0-59)");
-            System.out.println("Military time is accepted, but 12 hour time is also accepted.\n");
-            tunaObject.setTime(h,m,s);
+        tunaObject.setTime(13,24,1);
+
+        System.out.println(tunaObject.toMilitary());
+        System.out.println(tunaObject.toString());
+    }
+}
+*/
+/*
+//      number 38 public, private and this
+import java.util.Scanner;
+
+class apples {
+    public static void main(String[] args) {
+        tuna tunaObject = new tuna();
+        System.out.println(tunaObject.toMilitary());
+        System.out.println(tunaObject.toString());
+
+        tunaObject.setTime(13,24,1);
+
+        System.out.println(tunaObject.toMilitary());
+        System.out.println(tunaObject.toString());
+    }
+}
+*/
+/*
+//      number 39   multiple constructors
+class apples {
+    public static void main(String[] args) {
+
+    }
+}
+*/
+/*
+//      40      set and get methods
+class apples {
+    public static void main(String[] args) {
+
+    }
+}
+*/
+/*
+//      number 41       building objects for constructors
+class apples {
+    public static void main(String[] args) {
+        tuna tunaObject = new tuna();
+        tuna tunaObject2 = new tuna(5);
+        tuna tunaObject3 = new tuna(5,13);
+        tuna tunaObject4 = new tuna(5,13,43);
+
+        System.out.printf("%s\n", tunaObject.toMilitary());
+        System.out.printf("%s\n", tunaObject2.toMilitary());
+        System.out.printf("%s\n", tunaObject3.toMilitary());
+        System.out.printf("%s\n", tunaObject4.toMilitary());
+
+    }
+}
+*/
+/*
+//      number 42       toString
+class apples {
+        public static void main(String[] args) {
+                potpie potObject = new potpie(4,5,6);
         }
+}
+*/
+/*
+//      number 43       composition
+class apples {
+    public static void main(String[] args) {
+        potpie potObject = new potpie(4,5,6);
+        tuna tunaObject = new tuna("Bucky", potObject);
 
-            System.out.println(tunaObject.toMilitary());
-            System.out.println(tunaObject.toString());
+        System.out.println(tunaObject);
+    }
+}
+*/
+/*
+//      number 44       enumeration
+class apples{
+    public static void main(String[] args){
+        for(tuna people : tuna.values()){
+            System.out.printf("%s\t%s\t\t%s\n", people, people.getDesc(), people.getYear());
+        }
+    }
+}
+*/
+/*
+//      number 45       EnumSet range
+import java.util.EnumSet;
+class apples {
+    public static void main(String[] args){
+        for(tuna people : tuna.values())
+            System.out.printf("%s\t%s\t\t%s\n",
+                    people, people.getDesc(), people.getYear());
+
+            System.out.println("\nAnd now for the range of constant!!!\n");
+            for(tuna people: EnumSet.range(tuna.kelsey, tuna.candy))
+                System.out.printf("%s\t%s\t\t%s\n", people,
+                        people.getDesc(), people.getYear());
+    }
+}
+*/
+/*
+//      number 46       Static
+class apples {
+    public static void main(String[] args){
+        tuna member1 = new tuna("Megan","Fox");
+        tuna member2 = new tuna("Natalie","Portman");
+        tuna member3 = new tuna("Taylor", "Swift");
+    }
+}
+*/
+/*
+//      number 47       More on Static
+class apples {
+    public static void main(String[] args){
+        tuna member1 = new tuna("Megan","Fox");
+        tuna member2 = new tuna("Natalie","Portman");
+        tuna member3 = new tuna("Taylor", "Swift");
+
+        System.out.println();
+        System.out.println(member1.getFirst());
+        System.out.println(member1.getLast());
+        System.out.println(member1.getMembers());
+
+        System.out.println(tuna.getMembers());
+//        System.out.println(member2.getFirst());
+//        System.out.println(member2.getLast());
+//        System.out.println(member2.getMembers());
+    }
+}
+*/
+/*
+//      number 48       final
+class apples{
+    public static void main(String[] args){
+        tuna tunaObject = new tuna(10);
+
+        for(int i = 0; i < 5;i++){
+            tunaObject.add();
+            System.out.printf("%s", tunaObject);
+        }
+    }
+}
+*/
+/*
+//      number 49       inheritance
+class apples{
+    public static void main(String[] args){
+        tuna tunaObject = new tuna();
+
+        tunaObject.eat();
+    }
+}
+*/
+/*
+//      number 50 Graphic User Interface GUI
+import javax.swing.JOptionPane;
+class apples{
+    public static void main(String[] args){
+        String fn = JOptionPane.showInputDialog("Enter first number");
+        String sn = JOptionPane.showInputDialog("Enter second number");
+
+        int num1 = Integer.parseInt(fn);
+        int num2 = Integer.parseInt(sn);
+
+        int sum = num1 + num2;
+
+        JOptionPane.showMessageDialog(null, "The sum is " + sum, "title bar", JOptionPane.PLAIN_MESSAGE);
+    }
+}
+*/
+//      number 51       GUI with JFrame
+class apples{
+    public static void main(String[] args){
 
     }
 }
