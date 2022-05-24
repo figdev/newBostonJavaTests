@@ -590,9 +590,72 @@ class apples{
     }
 }
 */
+/*
 //      number 51       GUI with JFrame
+import javax.swing.JFrame;
+class apples{
+    public static void main(String[] args){
+        tuna bucky = new tuna();
+        bucky.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        bucky.setSize(275,180);
+        bucky.setVisible(true);
+    }
+}
+*/
+/*
+//      number 54       Event Handler Program
+import javax.swing.JFrame;
+
+class apples{
+    public static void main(String[] args){
+        tuna bucky = new tuna();
+        bucky.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        bucky.setSize(350,100);
+        bucky.setVisible(true);
+    }
+}
+*/
+/*
+//      number 55       Introduction to Polymorphism
 class apples{
     public static void main(String[] args){
 
+        food[] bucky = new food[2];
+        bucky[0] = new potpie();
+        bucky[1] = new tuna();
+
+        for(int x = 0; x<2;++x){
+            bucky[x].eat();
+        }
+
+    }
+}
+*/
+/*
+//      number 56       polymorphic arguments
+class apples{
+    public static void main(String[] args){
+
+        fatty bucky = new fatty();
+        food fo = new food();
+        food po = new potpie();
+
+        bucky.digest(fo);
+        bucky.digest(po);
+    }
+}
+*/
+/*
+//      number 57       overriding rules
+class apples{
+    public static void main(String[] args){
+    }
+}
+*/
+//      number 58       abstract and concrete classes
+//      number 59 - Class to Hold Objects
+
+class apples {
+    public static void main(String[] args) {
     }
 }

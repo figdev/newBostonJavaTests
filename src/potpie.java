@@ -43,3 +43,34 @@ public class potpie {
 public class potpie extends food{
 
 }*/
+/*
+//      number 55       Introduction to Polymorphism
+public class potpie extends food{
+    void eat(){
+        System.out.println("this potpie is great");
+    }
+}
+*/
+/*
+//      number 56       polymorphic arguments
+public class potpie extends food{
+    void eat(){
+        System.out.println("this potpie is great");
+    }
+}
+*/
+/*
+//      number 57       overriding rules
+public class potpie extends food{
+    void eat(){
+        System.out.println("this potpie is great");
+    }
+}
+*/
+//      number 58       Abstract and Concrete classes
+/*
+public class potpie extends food{
+    public void eat(){
+        System.out.println("this potpie is great");
+    }
+}*/
