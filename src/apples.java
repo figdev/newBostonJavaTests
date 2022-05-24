@@ -654,8 +654,49 @@ class apples{
 */
 //      number 58       abstract and concrete classes
 //      number 59 - Class to Hold Objects
+//      number 60 - Array holding many objects
 
+/*
 class apples {
     public static void main(String[] args) {
+
+        AnimalList ALO = new AnimalList();
+        Dog d = new Dog();
+        Fish f = new Fish();
+        ALO.add(d);
+        ALO.add(f);
+
+    }
+}*/
+
+//      Number 61   Simple Polymorphic Program
+/*
+class apples{
+    public static void main(String[] args){
+        Animal[] theList = new Animal[2];
+        Dog d = new Dog();
+        Fish f = new Fish();
+
+        theList[0]=d;
+        theList[1]=f;
+
+        for(Animal x: theList){
+            x.noise();
+        }
+    }
+}*/
+
+//      Number 62   Jbutton
+
+import javax.swing.JFrame;
+
+class apples{
+    public static void main(String[] args){
+
+        Gui go = new Gui();
+        go.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        go.setSize(300,200);
+        go.setVisible(true);
+
     }
 }
