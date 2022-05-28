@@ -688,6 +688,7 @@ class apples{
 
 //      Number 62   Jbutton
 
+/*
 import javax.swing.JFrame;
 
 class apples{
@@ -698,5 +699,36 @@ class apples{
         go.setSize(300,200);
         go.setVisible(true);
 
+    }
+}*/
+
+//      number 64   JCheckBox
+
+//      65 - The Final Check Box Program
+//      number 66       JRadioButton
+/*//      number 67       JRadioButton Final Program
+
+import javax.swing.JFrame;
+
+class apples {
+    public static void main(String[] args) {
+
+        Gui go = new Gui();
+        go.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        go.setSize(300, 200);
+        go.setVisible(true);
+
+    }
+}*/
+//      iterative math class
+import java.util.Scanner;
+class apples {
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        iterativeMath mathObj = new iterativeMath();
+
+        System.out.print("Enter iterations (0-n value): ");
+        int number = scan.nextInt();
+        mathObj.squaredMath(number);
     }
 }
