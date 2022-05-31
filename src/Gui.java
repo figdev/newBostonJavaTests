@@ -165,3 +165,155 @@ public class Gui extends JFrame{
 
 }
 */
+
+//      number 68       JComboBox
+//      number 69       Drop Down List Program
+/*
+
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class Gui extends JFrame {
+
+    private JComboBox box;
+    private JLabel picture;
+
+    private static String[] filename = {"b.png", "x.png"};
+    private Icon[] pics = {new ImageIcon(getClass().getResource(filename[0])), new ImageIcon(getClass().getResource(filename[1]))};
+
+    public Gui() {
+
+        super("Title");
+        setLayout(new FlowLayout());
+
+        box = new JComboBox(filename);
+
+        box.addItemListener(
+                new ItemListener() {
+                    public void itemStateChanged(ItemEvent event){
+                        if (event.getStateChange()==ItemEvent.SELECTED)
+                            picture.setIcon(pics[box.getSelectedIndex()]);
+                    }
+                }
+        );
+
+        add(box);
+        picture=new JLabel(pics[0]);
+        add(picture);
+
+    }
+}
+*/
+
+//      number 70       JList
+//      number 71       JList Program
+/*
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import javax.swing.event.*;
+
+public class Gui extends JFrame{
+
+    private JList list;
+    private static final String[] colornames = {"black", "blue", "red", "white"};
+    private static final Color[] colors = {Color.BLACK, Color.BLUE, Color.RED, Color.WHITE};
+
+    public Gui(){
+
+        super("Title");
+        setLayout(new FlowLayout());
+
+        list = new JList(colornames);
+        list.setVisibleRowCount(4);
+        list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        add(new JScrollPane(list));
+
+        list.addListSelectionListener(
+                new ListSelectionListener() {
+                    public void valueChanged(ListSelectionEvent event){
+                        getContentPane().setBackground(colors[list.getSelectedIndex()]);
+                    }
+                }
+        );
+    }
+}*/
+
+//      number 73       Moving List Items Program
+/*
+
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+import javax.swing.event.*;
+
+public class Gui extends JFrame{
+
+    private JList leftList;
+    private JList rightList;
+    private JButton moveButton;
+    private static String[] foods = {"bacon", "wings", "ham", "beef", "morebacon"};
+
+    public Gui(){
+        super("title");
+        setLayout(new FlowLayout());
+        leftList = new JList(foods);
+        leftList.setVisibleRowCount(4);
+        leftList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        add(new JScrollPane(leftList));
+
+        moveButton = new JButton("Move -->");
+        moveButton.addActionListener(
+                new ActionListener() {
+                    public void actionPerformed(ActionEvent event){
+                       rightList.setListData(leftList.getSelectedValues());
+                    }
+                }
+        );
+        add(moveButton);
+
+        rightList = new JList();
+        rightList.setVisibleRowCount(5);
+        rightList.setFixedCellHeight(20);
+        rightList.setFixedCellWidth(100);
+        rightList.setSelectionMode(ListSelectionModel.MULTIPLE_INTERVAL_SELECTION);
+        add(new JScrollPane(rightList));
+
+    }
+
+
+}
+*/
+
+//      number 74       Mouse Events
+//      number 75       MouseListener interface
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.*;
+
+
+public class Gui extends JFrame {
+
+    private JPanel mousePanel;
+    private JLabel statusBar;
+
+    public Gui(){
+        super("Title");
+        mousePanel = new JPanel();
+        mousePanel.setBackground(Color.WHITE);
+        add(mousePanel,BorderLayout.CENTER);
+
+        statusBar = new JLabel("default");
+        add(statusBar, BorderLayout.SOUTH);
+
+        HandlerClass handler = new HandlerClass();
+        mousePanel.addMouseListener(handler);
+        mousePanel.addMouseMotionListener(handler);
+
+    }
+
+}

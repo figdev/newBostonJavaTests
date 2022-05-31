@@ -706,7 +706,7 @@ class apples{
 
 //      65 - The Final Check Box Program
 //      number 66       JRadioButton
-/*//      number 67       JRadioButton Final Program
+//      number 67       JRadioButton Final Program
 
 import javax.swing.JFrame;
 
@@ -719,8 +719,9 @@ class apples {
         go.setVisible(true);
 
     }
-}*/
+}
 //      iterative math class
+/*
 import java.util.Scanner;
 class apples {
     public static void main(String[] args){
@@ -732,3 +733,4 @@ class apples {
         mathObj.squaredMath(number);
     }
 }
+*/
